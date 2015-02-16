@@ -1,0 +1,145 @@
+body {
+  font-family: 'Open Sans';
+  padding: 2rem;
+}
+
+section {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+}
+section h3 {
+  margin-bottom: 0;
+}
+section p {
+  margin-top: 0;
+}
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+}
+
+a.button {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #3C7AC0;
+  background-color: #white;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+a.button:hover, a.button:focus {
+  background-color: #3C7AC0;
+  color:white;
+}
+ /* Content Pages finishes */ 
+
+#leftSidebar{
+  display: inline-block;
+  float: left;
+  margin: 0;
+  margin-bottom: 0rem;
+  width: 24%;
+  padding-top: 2rem;
+  /*padding-left: 0.2rem;*/
+  /*border: 1px solid #eee;*/
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-siziing: border-box;
+  box-sizing: border-box;
+}
+
+nav.sideNav{
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+}
+
+nav.sideNav a{
+  border-top: solid 1px white;
+  border-opacity: 0.7;
+  font-size: .9rem;
+  line-height: 1rem;
+  display: block;
+  text-align: left;
+  background-color: #B9D4F0;
+  color: #3C7AC0;
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+nav.sideNav a:hover, nav.sideNav a:focus{
+  background-color: #3C7AC0;
+  color: white;
+  font-weight: 600;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  padding-left: 1.5rem;
+  border-top: solid 1px white;
+  border-bottom: solid 1px #eee;
+
+  -webkit-transition: all 0.15s ease;
+    transition: all 0.25s ease;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+nav.sideNav a:active{
+  background-color: #3C7AC0;
+  color: white;
+  font-weight: 400;
+}
+
+#titleRow {
+  margin: 0 auto;
+  width: 90%;
+  /*padding-left: .9rem;*/
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  background-color: #3C7AC0;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+  /*padding-left: 1rem;*/
+  border-bottom: 2px solid white;
+
+}
+
+#titleRow a {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding-left: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#titleRow a:hover, #titleRow a:focus{
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+#titleRow a:active {
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+  
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>P01:Process Style Guide</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container"></div>
+    <h1>Style Guide</h1>
+    <p>This is a style guide web-page of buttom elements,form elements,textual elements and key grouping 
+      of elements on my site.</p>
+      <div class="navigation"></div>
+    <nav>
+      Go to:
+      <a href="#buttons">Buttons</a>
+    </nav>
+    <!-- Try to ensure that each element has its own portion of the page -->
+    <section id="buttons">
+      <h2>Button Style</h2>
+      <h3>CSS selector:</h3>
+      <p>'a.button'</p>
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class="button"&gt;About&lt;/a&gt;</code>
+      <code>&lt;a href="#" class="button"&gt;Men's&lt;/a&gt;</code>
+      <code>&lt;a href="#" class="button"&gt;Women's&lt;/a&gt;</code>
+      <code>&lt;a href="#" class="button"&gt;Bags&lt;/a&gt;</code>
+      <code>&lt;a href="#" class="button"&gt;Accessories&lt;/a&gt;</code>
+      <code>&lt;a href="#" class="button"&gt;Contact&lt;/a&gt;</code>
+      <code>&lt;a href="#" class="button"&gt;My Cart&lt;/a&gt;</code>
+      <h3>Rendered element:</h3>
+      <a class="button" href="#">About</a>
+      <a class="button" href="#">Men's</a>
+      <a class="button" href="#">Women's</a>
+      <a class="button" href="#">Bags</a>
+      <a class="button" href="#">Accessories</a>
+      <a class="button" href="#">Contact</a>
+      <a class="button" href="#">My Cart</a>
+
+
+      <h2>Form Style</h2>
+       <h3>CSS selector:</h3>
+      <p>'a.form'</p>
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class="form class="&lt;yform"&lt;/a&gt;</code>
+
+ <form class="yform">
+    <div class="inline-form-fields">
+        <div class="field">
+            <h4><label>First Name</label></h4>
+            <input type="text">
+        </div>
+      </div>
+        <div class="field field-minimal">
+            <h4><label>Last Name</label></h4>
+            <input type="text">
+        </div>
+        <div class="field field-minimal">
+            <h4><label>Email</label></h4>  
+            <input type="text">
+    </div>
+    </form>
+    <div class="field field-minimal">
+            <h4><label>Reason for Contact</label></h4>
+            <select name="reason">
+              <option value="issue">I have an issue with a product I purchased</option>
+                <option value="question">I have a question about a product I purchased</option>
+                <option value="report">I would like to report problem with your website</option>
+                <option value="other">Other</option>
+                </select>
+              </div>
+      <h2>Textual Style</h2>
+       <h3>CSS selector:</h3>
+      <p>'section h5'</p>
+      <h3>Sample code:</h3>
+      <code>&lt;a href="About US"&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.&lt;/a&gt;</code>
+      <h3>Rendered element:</h3>
+      <h5>About Us</h5>
+      <b>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</b>
+
+      <h2>Key Grouping Style</h2>
+      <h3>CSS selector:</h3>
+      <p>'nav.sideNav a'</p>
+      <h3>Sample code:</h3>
+      <code>&lt;a href="navToggle"&gt;"sideNav"&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <div id="leftSidebar">
+<div id="titleRow">
+  <a href="#" id="navToggle"> About US</a>
+</div>
+<nav class="sideNav">
+<div id="CompanyEvents">
+<a href="styleguide.html">News and Events</a>
+</div>
+<div id="Blog">
+<a href="styleguide.html">Blog</a>
+</div>
+<div id="Shipping">
+<a href="styleguide.html">Shipping</a>
+</div>
+<div id="ContactUs">
+<a href="styleguide.html">Contact Us</a>
+</div>
+</nav>
+</div>
+    </section>
+  </body>
+</html>

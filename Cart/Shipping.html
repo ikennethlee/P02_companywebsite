@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>  <!-- google fonts - Open Sans -->
+
+		<title>Ascend</title> 
+    	<link href="../css/main.css" rel="stylesheet">
+    	<link href="../css/grid.css" rel="stylesheet">
+    	<!-- <link href="css/normalize.css" rel="stylesheet">   
+    		Not used for not as it is breaking some of the content i.e h1... Maybe it will be used later when we test for compatibility with other browsers IE and Moz-->
+	</head>
+
+	<body>
+
+	<div id="container"> <!-- sets the width for all pages to 1024 -->	
+		<div id="top">
+			<div class="logo">
+				<a href="../index.html"><img alt="Ascend" src="../img/logo_blue.png" width="100%"></a>
+			</div>
+
+			<div class="navigation">
+
+				<div class="account">
+					<a href ="../Registration/Signup.html"> Sign Up </a> <span id="devider"> | </span> <a href="#"> Log In </a> 
+				</div>
+
+				<div class="col-1of6">
+					<a href="../index.html" id="altLogo"> Home</a>
+				</div>
+
+				<div class="col-1of6">
+					<a href="#" id="signUp"> Sign Up </a>
+				</div>
+
+				<div class="col-1of6">
+					<a href="#" id="logIn"> Log In </a>
+				</div>
+
+
+				<nav class="grid">
+
+					<div class="col-1of6">
+						<a href="../About/index.html" id="About"> About </a>
+					</div>
+
+					<div class="col-1of6">
+						<a href="../Mens/index.html" id="Mens ">Mens</a>
+					</div>
+
+					<div class="col-1of6">
+						<a href="../Womens/index.html" id="Womens">Womens</a>
+					</div>
+
+					<div class="col-1of6">
+						<a href="../Bags/index.html" id="Bags">Bags</a>
+					</div>
+
+					<div class="col-1of6">
+						<a href="../About/Contact.html" id="Contact Us">Contact</a>
+					</div>
+
+					<div class="col-1of6">
+						<a href="../Cart/index.html" id="My Cart"> My Cart <span id="cart_Item"> 1 </span></a>
+					</div>
+				</nav> <!-- Header navigation closed -->
+			</div> <!-- Navigation div closed -->
+		</div>
+
+		<div class="banner"> 
+			<img alt="Welcome" src="../Cart/images/banner/mycart_banner.gif" width="100%">
+			<!-- <div class="account">
+				<a href ="#"> Sign Up </a> <span id="devider"> | </span> <a href="#"> Log In </a> 
+			</div> -->
+
+		</div> <!-- closed banner div -->
+
+<!-- Main Page content begins here -->
+
+		<div id="leftSidebar">
+			<div id="titleRow"><a href="index.html">My Cart <span id="cart_Item"> 1 </span></a></div>
+			<nav class="sideNav">
+				<div id="Shipping"><a href="Shipping.html">Shipping Information</a></div>
+				<div id="Billing"><a href="Billing.html">Billing Information</a></div>
+				<div id="Summary"><a href="OrderSummary.html">Order Summary</a></div>
+			</nav>
+		</div> <!-- leftNav div closed -->
+
+		<div id="pageContent">
+			<h1> Shipping Information </h1><hr>
+
+			<div class="shippingInstructions">
+				<p>To continue with this purchase,  please enter a shipping address below.</p>
+				<p>Existing customers, please <a href="#">Sign In</a>, or <a href="#">Create an Account</a> if you don't have one already - it's easy and more convinient way to shop online.</p>
+			</div><!--shippingInstructions-->
+
+			<div class="shippingInfo">
+				<form action="" method="post" class="contactForm">
+					<label> Full Name
+		      			<input type="text" id="FullName" name="FullName">
+		      		</label>
+
+		      		<label> Address Line1
+		      			<input type="text" id="AddressLine1" name="AddressLine1">
+		      		</label>
+
+		      		<label> Address Line2
+		      			<input type="text" id="AddressLine2" name="AddressLine2">
+		      		</label>
+
+		      		<label> City
+		      			<input type="text" id="City" name="City">
+		      		</label>
+
+		      		<label> State/Province/Region
+		      			<input type="text" id="State" name="State">
+		      		</label>
+
+		      		<label> Postal/ZIP Code
+		      			<input type="text" id="Postal" name="Postal">
+		      		</label>
+		      		
+
+		      		<label> Country
+		      			<select name="Canada">
+		      				<option value="Canada">Canada</option> 
+		      				<option value="UnitedStates">United States of America</option>
+		      				<option value="WesternEurope">Western Europe</option>
+		      				<option value="JapanandSoutheastAsia">Japan and Southeast Asia</option>
+		      				<option value="RestoftheWorld">Rest of the World</option>
+		      				</select>
+		      		</label>
+
+		      		<label> Choose your shipping options
+		      			<select name="Standard">
+		      				<option value="Standard">Standard shipping (3-6 Business days) Free</option> 
+		      				<option value="Express">Express shipping (2-4 Business days) $4.99</option>
+		      				<option value="Priority">Priority shipping (1-3 Business days) $10.99</option>
+		      				</select>
+		      		</label>
+
+		      		<label> Special Requests, or Comments
+		      			<textarea name="comments" id="additionalComments"></textarea>
+		      		</label>
+	      		</form>
+			</div> <!--shippingInfo-->
+
+			<div id="inquiryButton">
+				<a href="Billing.html"><button class="AddToCart"> Continue to Billing </button></a>
+			</div><!-- inquiryButton -->
+
+		</div> <!-- pageContent div closed -->
+
+
+<!-- Main Page content ends here -->
+
+		<div id="footer"> 
+            <div id="footNav">
+                <a href ="About/index.html"> About </a>  
+                <a href ="Mens/index.html"> Mens </a>  
+                <a href ="Womens/index.html"> Womens </a> 
+                <a href ="Bags/index.html"> Bags </a> 
+                <a href ="About/Contact.html"> Contact </a>   
+            </div> <!-- Altnav ends -->
+
+			<div id="copyright">
+				Copyright @ Ascend
+			</div> <!-- copyright ended -->
+
+        </div> <!-- Footer div closed -->
+
+	</div> <!-- closed container div -->
+
+		
+	</body>
+
+</html>

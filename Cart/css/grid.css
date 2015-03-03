@@ -1,0 +1,446 @@
+/*grid.css, defining layout grid for Ascend site */
+html, body {
+	margin: 0;
+	padding: 0;
+} /* Reset default margin and padding applied by browser - usually 8px. 
+	Comma between selector html and body means "OR" */
+
+
+[class*='col-'] {
+	float: left;
+	padding: 0;
+	/*text-align: center; */
+}
+
+[class*='col-']:last-of-type {
+	padding-right: 0;
+}
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+} 
+
+.grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.col-1of1 {
+	width: 100%;
+}
+
+.col-1of2 {
+	width: 50%;
+}
+
+.col-2of3 {
+	width: 66.66%;
+}
+
+.col-1of3 {
+	width: 33.33%;
+}
+
+.col-new1of3 {
+	width: 33.33%;
+}
+
+.col-1of6 {
+	width: 16%;
+}
+
+.col-1of4 {
+	width: 25%;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	margin-top: 0.5rem;
+}
+
+.col-1of4-home{
+	width: 25%;
+}
+
+.col-2-3rd {
+	width: 85%;
+}
+
+.col-1-3rd {
+	width: 15%;
+}
+
+.col-blogMain{
+	width: 70%;
+}
+
+.col-blogSide{
+	width: 30%;
+}
+
+@media (max-width: 810px){
+	.col-1of4{
+		width: 33.33%;
+	}
+}
+
+/* iPad and other tablets using 1024x768px resolution - resize */
+
+@media (max-width: 768px) {
+	.col-1of3{
+		width: 100%;
+	}
+
+	.col-2of3{
+		width: 100%;
+	}
+
+	.col-new1of3{
+		width: 50%;
+	}
+
+	.singleProductImg{
+		margin: 2rem auto;
+	}
+
+	#container{
+		width: 100%;
+	}
+	.col-1of6 {
+		width: 33%;
+		border-left: 2px solid white ;
+	}
+
+	.navigation {
+		margin-left: 0.2rem;
+		width: 100%;
+	}
+
+	.logo{
+		display: none;
+	}
+
+	button{
+		font-size: .9rem;
+		font-weight: normal;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav.grid a{
+		border-top: solid 2px white; 
+		border-opacity: 0.7;
+		text-align: center;
+		font-size: 1rem;
+		color:  #366373;
+		text-decoration: none;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		background-color: #ABC8D8;
+	}
+
+	.account {
+		display: none;
+	}
+
+	#altLogo{
+		display: inline-block;
+		float: left;
+		color: #;
+		background-color: #A3A7C1;*/
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+		border-top: solid 2px white; 
+		border-opacity: 0.7;
+		text-align: center;
+		font-size: 1rem;
+		text-decoration: none;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+	}
+
+	#altLogo:hover{
+		background-color: #666774;
+		color: white;
+		-webkit-transition: all 0.15s ease;
+	  	transition: all 0.25s ease;
+	  
+	  	-webkit-user-select: none;
+	  	-moz-user-select: none;
+	  	-ms-user-select: none;
+	  	user-select: none;
+	  
+	  	-webkit-appearance: none;
+	  	-webkit-font-smoothing: antialiased;
+	  	text-rendering: optimizeLegibility;
+	}
+
+	#altLogo:active{
+		-webkit-box-shadow: none;
+  		box-shadow: none;
+  		text-decoration: none;
+	}
+
+	#signUp {
+		display: inline-block;
+		float: left;
+		color: #666774;
+		background-color: #C5C371;
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+		border-top: solid 2px white; 
+		border-opacity: 0.7;
+		text-align: center;
+		font-size: 1rem;
+		text-decoration: none;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		background-color: #A3A7C1;  
+	}
+
+	
+
+	#signUp:hover{
+		background-color: #C5C371;
+		color: white;
+		-webkit-transition: all 0.15s ease;
+	  	transition: all 0.25s ease;
+	  
+	  	-webkit-user-select: none;
+	  	-moz-user-select: none;
+	  	-ms-user-select: none;
+	  	user-select: none;
+	  
+	  	-webkit-appearance: none;
+	  	-webkit-font-smoothing: antialiased;
+	  	text-rendering: optimizeLegibility;
+	}
+
+	#signUp:active {
+		-webkit-box-shadow: none;
+  		box-shadow: none;
+  		text-decoration: none;
+	}
+
+	#logIn {
+		display: inline-block;
+		float: left;
+		color: #666774;
+		background-color: #C5C371;
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+		border-top: solid 2px white; 
+		border-opacity: 0.7;
+		text-align: center;
+		font-size: 1rem;
+		text-decoration: none;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		background-color: #A3A7C1;	
+
+	}
+
+	 #logIn:hover{
+		background-color: #666774;
+		color: white;
+		-webkit-transition: all 0.15s ease;
+	  	transition: all 0.25s ease;
+	  
+	  	-webkit-user-select: none;
+	  	-moz-user-select: none;
+	  	-ms-user-select: none;
+	  	user-select: none;
+	  
+	  	-webkit-appearance: none;
+	  	-webkit-font-smoothing: antialiased;
+	  	text-rendering: optimizeLegibility;
+	}
+
+	#altLogo:after{
+		clear: both;
+	}
+	#signUp:after{
+		clear: both;
+	}
+	#logIn:after{
+		clear: both;
+	}
+
+	.mainPgBag img{
+		width: 175px;
+		height: 125px;
+	}
+}
+
+@media (max-width: 610px){
+
+	.col-1of6 {
+		width: 33%;
+		border-left: 2px solid white ;
+	}
+
+	.col-1of4{
+		width: 50%;
+	}
+
+	.col-blogMain{
+	width: 100%;
+	}
+
+	.col-blogSide{
+	width: 100%;
+	}
+
+	.blogSide{
+	margin-top: 0;
+	margin-left: 0;
+	margin-bottom: 2rem;
+	}
+
+@media (max-width: 664px) {
+
+	.leftNav{
+		width: 100%;
+	}
+
+	.pageContent{
+		width: 100%;
+	}
+
+	nav.sideNav a{
+		font-size: 0.7rem;
+	}
+
+	#titleRow {
+		font-size: 0.8rem;
+	}
+
+	#footer #footNav{
+		width:100%;
+		float: left;
+		text-align: left;
+	}
+}
+
+@media (max-width: 590px) {
+
+	.col-2of3 {
+	width: 100%;
+	}
+}
+/* mobile devices resolution - resize */
+
+@media (max-width: 495px) {
+
+	#top{
+		padding-bottom: .1rem;
+	}
+
+	.col-1of6 {
+		width: 33%;
+		border-left: 2px solid white ;
+	}
+
+	.productLabel img{
+	float: left;
+	margin-top: -1rem;
+	margin-bottom: 1rem;
+	}
+
+	.col-2of3 {
+	width: 100%;
+	}
+
+	.col-1of3 {
+		width: 100%;
+	}
+
+	.col-1of4-home{
+		width: 50%;
+	}
+
+	.mainPageProduct{
+		position: relative;
+		left: 20%;
+	}
+
+	.banner {
+		display: none;
+	}
+
+	nav.grid a{
+		font-size: .9rem;
+		padding-top: 0.3rem;
+		padding-bottom: 0.3rem;
+	}
+
+	#altLogo{
+		font-size: .9rem;
+		padding-top: 0.2rem;
+		padding-bottom: 0.2rem;
+	}
+
+	#signUp{
+		font-size: .9rem;
+		padding-top: 0.2rem;
+		padding-bottom: 0.2rem;
+	}
+
+	#logIn{
+		font-size: .9rem;
+		padding-top: 0.2rem;
+		padding-bottom: 0.2rem;
+	}
+
+	#leftSidebar{
+		width: 100%;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	nav.sideNav {
+		width: 95%;
+	}
+
+	nav.sideNav a {
+	font-size: .9rem;	
+	}
+
+	#titleRow {
+		font-size: 1rem;
+		width:95%;
+	}
+
+	#pageContent{
+		margin: .9rem;
+		padding: .5rem 0 0 0;
+		width: 95%;
+	}
+
+	#pageContent h1{
+		margin-top: 0;
+		line-height: 1.2rem;
+	}
+
+	.FeatBags{
+	margin-bottom: 0;
+	} /* Reset bottom margin, originally setup in case that there are not blog posts */
+
+}
+
+@media (max-width: 399px){
+
+	.col-1of6 {
+		width: 33%;
+		border-left: 2px solid white ;
+	}
+
+	.col-1of2 {
+	width: 100%;
+}
+}
+
+

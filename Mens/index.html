@@ -7,10 +7,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>  <!-- google fonts - Open Sans -->
 
 		<title>Ascend</title> 
+		<link href="css/normalize.css" rel="stylesheet">
     	<link href="../css/main.css" rel="stylesheet">
     	<link href="../css/grid.css" rel="stylesheet">
-    	<!-- <link href="css/normalize.css" rel="stylesheet">   
-    		Not used for not as it is breaking some of the content i.e h1... Maybe it will be used later when we test for compatibility with other browsers IE and Moz-->
+   
 	</head>
 
 	<body>
@@ -18,8 +18,9 @@
 	<div id="container"> <!-- sets the width for all pages to 1024 -->	
 		<div id="top">
 			<div class="logo">
-				<a href="../index.html"><img alt="Ascend" src="../img/logo_blue.png" width="240"></a>
+				<a href="index.html"><img alt="Ascend" src="img/logo_blue.png" width="240"></a>
 			</div>
+
 
 			<div class="navigation">
 
@@ -47,7 +48,7 @@
 					</div>
 
 					<div class="col-1of6">
-						<a href="../Mens/index.html" id="Mens ">Mens</a>
+						<a href="../Mens/index.html" id="Mens">Mens</a>
 					</div>
 
 					<div class="col-1of6">
@@ -59,18 +60,18 @@
 					</div>
 
 					<div class="col-1of6">
-						<a href="../About/Contact.html" id="Contact Us">Contact</a>
+						<a href="../About/Contact.html" id="Contact_Us">Contact</a>
 					</div>
 
 					<div class="col-1of6">
-						<a href="../Cart/index.html" id="My Cart"> My Cart <span id="cart_Item"> 0 </span></a>
+						<a href="../Cart/index.html" id="My_Cart"> My_Cart <span id="cart_Item"> 0 </span></a>
 					</div>
 				</nav> <!-- Header navigation closed -->
 			</div> <!-- Navigation div closed -->
 		</div>
 
 		<div class="banner"> 
-			<img alt="Welcome" src="../Mens/images/banner/products_banner.gif" width="100%">
+			<img alt="Welcome" src="../Mens/images/banner/products_banner.gif" width="1000">
 			<!-- <div class="account">
 				<a href ="#"> Sign Up </a> <span id="devider"> | </span> <a href="#"> Log In </a> 
 			</div> -->
@@ -84,117 +85,107 @@
 				<a href="index.html">Men's Products</a>
 			</div>
 			<nav class="sideNav">
-				<div id="Shell"><a href="Shell.html">Shell Layer & Jackets</a><div>
-				<div id="Fleece"><a href="Fleece.html">Mid Layer & Fleece</a></div>
-				<div id="Shirts"><a href="Shirts.html">Shirts & Tops</a></div>
-				<div id="Pants"><a href="Pants.html">Pants & Shorts</a></div>
-
+				<div id="Shell"><a href="Shell.html">Shell Layer and Jackets</a></div>
+				<div id="Fleece"><a href="Fleece.html">Mid Layer and Fleece</a></div>
+				<div id="Shirts"><a href="Shirts.html">Shirts and Tops</a></div>
+				<div id="Pants"><a href="Pants.html">Pants and Shorts</a></div>
 			</nav>
 		</div> <!-- leftNav div closed -->
 
 		<div id="pageContent">
-			<h1> Men's Products</h1><hr>
-			<div class="grid">
+			<h1> Men's Products </h1><hr>
+					<div class="grid">
 				<div class="col-1of4">
-					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Beta-AR-Jacket-Arctic-Fog.gif" alt="Beta AR Jacket" width="112.5px" height="125px"></a>
+					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Beta-AR-Jacket-Arctic-Fog.gif" alt="Beta AR Jacket"  width="112" height="125"></a>
 
 					<article class="multiProduct">
 						<h3> $570.00 CAD</h3>
-						<img class="prodRating" src="../Mens/images/star4.png"width="90px" height="14px">
+						<img class="prodRating" src="../Mens/images/star4.png" alt="star4" width="90" height="14">
 						<h4> Arcteryx </h4>
 						<h4> Beta AR Jacket</h4>
-						<a href="../Cart/ItemAdded.html"><button class="AddToCart"> Add To Cart </button><a>
-						<a href="../Cart/ItemAdded.html"><button class="QuickBuy">Quick Buy</button>
+						<form style="display: inline" action="../Cart/ItemAdded.html" method="get"> <button class="AddToCart"> Add To Cart </button></form>
 					</article>
 				</div><!-- col-1of4 closed -->
 
 				<div class="col-1of4">
-					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Beta-LT-Hybrid-Jacket-Anvil-Grey.gif" alt="Beta LT Hybrid Jacket" width="112.5px" height="125px"></a>
+					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Beta-LT-Hybrid-Jacket-Anvil-Grey.gif" alt="Beta LT Hybrid Jacket"  width="112" height="125"></a>
 
 					<article class="multiProduct">
 						<h3> $380.00 CAD</h3>
-						<img class="prodRating" src="../Mens/images/star4.png"width="90px" height="14px">
+						<img class="prodRating" src="../Mens/images/star4.png" alt="star4" width="90" height="14">
 						<h4> Arcteryx </h4>
 						<h4>Beta LT Hybrid Jacket</h4>
-						<a href="../Cart/ItemAdded.html"><button class="AddToCart"> Add To Cart </button><a>
-						<a href="../Cart/ItemAdded.html"><button class="QuickBuy">Quick Buy</button>
+						<form style="display: inline" action="../Cart/ItemAdded.html" method="get"> <button class="AddToCart"> Add To Cart </button></form>
 					</article>
 				</div> <!-- col-1of4 closed -->
 
 				<div class="col-1of4">
-					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Alpha-FL-Jacket-Mantis-Green.gif" alt="Alpha FL Jacket" width="112.5px" height="125px"></a>
+					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Alpha-FL-Jacket-Mantis-Green.gif" alt="Alpha FL Jacket"  width="112" height="125"></a>
 
 					<article class="multiProduct">
 						<h3> $450.00 CAD</h3>
-						<img class="prodRating" src="../Mens/images/star4.png"width="90px" height="14px">
+						<img class="prodRating" src="../Mens/images/star4.png" alt="star4" width="90" height="14">
 						<h4>Arcteryx</h4>
 						<h4> Alpha FL Jacket </h4>
-						<a href="../Cart/ItemAdded.html"><button class="AddToCart"> Add To Cart </button><a>
-						<a href="../Cart/ItemAdded.html"><button class="QuickBuy">Quick Buy</button>
+						<form style="display: inline" action="../Cart/ItemAdded.html" method="get"> <button class="AddToCart"> Add To Cart </button></form>
 					</article>
 				</div><!-- col-1of4 closed -->
 
 				<div class="col-1of4">
-					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Alpha-SL-Jacket-Blue-Smoke.gif" alt="Alpha SL Jacket"width="112.5px" height="125px"></a>
+					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Alpha-SL-Jacket-Blue-Smoke.gif" alt="Alpha SL Jacket" width="112" height="125"></a>
 
 					<article class="multiProduct">
 						<h3> $280.00 CAD</h3>
-						<img class="prodRating" src="../Mens/images/star4.png"width="90px" height="14px">
+						<img class="prodRating" src="../Mens/images/star4.png" alt="star4" width="90" height="14">
 						<h4>Arcteryx</h4>
 						<h4> Alpha SL Jacket</h4>
-						<a href="../Cart/ItemAdded.html"><button class="AddToCart"> Add To Cart </button><a>
-						<a href="../Cart/ItemAdded.html"><button class="QuickBuy">Quick Buy</button>
+						<form style="display: inline" action="../Cart/ItemAdded.html" method="get"> <button class="AddToCart"> Add To Cart </button></form>
 					</article>
 				</div><!-- col-1of4 closed -->
 
 				<div class="col-1of4">
-					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Alpha-SV-Jacket-Black.gif" alt="Alpha SV Jacket Men's" width="112.5px" height="125px"></a>
+					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Alpha-SV-Jacket-Black.gif" alt="Alpha SV Jacket Men's" width="112" height="125"></a>
 					<article class="multiProduct">
 						<h3> $700.00 CAD </h3>
-						<img class="prodRating" src="../Mens/images/star4.png"width="90px" height="14px">
+						<img class="prodRating" src="../Mens/images/star4.png" alt="star4" width="90" height="14">
 						<h4>Arcteryx</h4>
 						<h4>Alpha SV Jacket</h4>
-						<a href="../Cart/ItemAdded.html"><button class="AddToCart"> Add To Cart </button><a>
-						<a href="../Cart/ItemAdded.html"><button class="QuickBuy">Quick Buy</button>
+						<form style="display: inline" action="../Cart/ItemAdded.html" method="get"> <button class="AddToCart"> Add To Cart </button></form>
 					</article>
 				</div><!-- col-1of4 closed -->
 
-				<div class="col-1of4"
-					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Rush-Jacket-Nautilus.gif"  alt="Rush Jacket Men's" width="112.5px" height="125px">
+				<div class="col-1of4">
+					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Rush-Jacket-Nautilus.gif"  alt="Rush Jacket Men's"  width="112" height="125">
 					<article class="multiProduct"></a>
 						<h3> $650.00 CAD</h3>
-						<img class="prodRating" src="../Mens/images/star4.png"width="90px" height="14px">
+						<img class="prodRating" src="../Mens/images/star4.png"  alt="star4" width="90" height="14">
 						<h4>Arcteryx</h4>
 						<h4>Rush Jacket</h4>
-						<a href="../Cart/ItemAdded.html"><button class="AddToCart"> Add To Cart </button><a>
-						<a href="../Cart/ItemAdded.html"><button class="QuickBuy">Quick Buy</button>
-
-
+						<form style="display: inline" action="../Cart/ItemAdded.html" method="get"> <button class="AddToCart"> Add To Cart </button></form>
+						</article>
 				</div> <!-- Div col-1of4 closed -->
 
 				<div class="col-1of4">
-					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Gamma-MX-Hoody-Buckeye.gif" alt="Gamma MX Hoody" width="112.5px" height="125px">
-					<article class="multiProduct"></a>
+					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Gamma-MX-Hoody-Buckeye.gif" alt="Gamma MX Hoody" width="112" height="125">
+					<article class="multiProduct">
 						<h3> $350.00 CAD</h3>
-						<img class="prodRating" src="../Mens/images/star4.png"width="90px" height="14px">
+						<img class="prodRating" src="../Mens/images/star4.png"  alt="star4" width="90" height="14">
 						<h4>Arcteryx</h4>
 						<h4>Gamma MX Hoody</h4>
-						<a href="../Cart/ItemAdded.html"><button class="AddToCart"> Add To Cart </button><a>
-						<a href="../Cart/ItemAdded.html"><button class="QuickBuy">Quick Buy</button>
+						<form style="display: inline" action="../Cart/ItemAdded.html" method="get"> <button class="AddToCart"> Add To Cart </button></form>
 					</article>
 				</div><!-- col-1of4 closed -->
 
 
 				<div class="col-1of4">
-					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Squamish-Hoody-Azul.gif" alt="Squamish Hoody" width="112.5px" height="125px"></a>
+					<a href="SingleProduct.html"><img class="allProductsImg" src="../Mens/images/Squamish-Hoody-Azul.gif" alt="Squamish Hoody" width="112" height="125"></a>
 					<article class="multiProduct">
 						<h3>$170.00 CAD</h3>
-						<img class="prodRating" src="../Mens/images/star4.png"width="90px" height="14px">
+						<img class="prodRating" src="../Mens/images/star4.png"  alt="star4" width="90" height="14">
 						<h4>Arcteryx</h4>
 						<h4>Squamish Hoody</h4>
-						<a href="../Cart/ItemAdded.html"><button class="AddToCart"> Add To Cart </button><a>
-						<a href="../Cart/ItemAdded.html"><button class="QuickBuy">Quick Buy</button>		
-						</article>
+						<form style="display: inline" action="../Cart/ItemAdded.html" method="get"> <button class="AddToCart"> Add To Cart </button></form>
+						</article>									
 				</div><!-- col-1of4 closed -->
 			</div> <!-- Grid closed -->
 		</div> <!-- pageContent div closed -->

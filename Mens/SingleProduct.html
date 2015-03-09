@@ -12,6 +12,13 @@
     	<link href="../css/grid.css" rel="stylesheet">
     	<!-- <link href="css/normalize.css" rel="stylesheet">   
     		Not used for not as it is breaking some of the content i.e h1... Maybe it will be used later when we test for compatibility with other browsers IE and Moz-->
+    	<script type="text/javascript">
+		// Popup window code
+			function newPopup(url) {
+				popupWindow = window.open(
+				url,'popUpWindow','height=500,width=450,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+			}
+		</script>
 	</head>
 
 	<body>
@@ -19,7 +26,7 @@
 	<div id="container"> <!-- sets the width for all pages to 1024 -->	
 		<div id="top">
 			<div class="logo">
-				<a href="index.html"><img alt="Ascend" src="img/logo_blue.png" width="240"></a>
+				<a href="../index.html"><img alt="Ascend" src="img/logo_blue.png" width="240"></a>
 			</div>
 
 
@@ -65,7 +72,7 @@
 					</div>
 
 					<div class="col-1of6">
-						<a href="../Cart/index.html" id="My&nbsp;Cart"> My Cart <span id="cart_Item"> 0 </span></a>
+						<a href="../Cart/index.html" id="My&nbsp;Cart"> My&nbsp;Cart <span id="cart_Item"> 0 </span></a>
 					</div>
 				</nav> <!-- Header navigation closed -->
 			</div> <!-- Navigation div closed -->
@@ -100,45 +107,35 @@
 			<div class="grid">
 				<div class="col-1of3">
 					<article class="singleProductImg">
-						<img src="../Mens/images/Beta-AR-Jacket-Arctic-Fog.gif"  alt="BetaARJacket" width="225" height="250">
-
-						<img class="singleRating" src="../Mens/images/star4.png" alt="star4" width="90" height="14">
-
+						<img src="../Mens/images/Beta-AR-Jacket-Arctic-Fog.png"  alt="BetaARJacket" width="225" height="250">
 						<div class="productName">
-							<h3> Arcteryx</h3>					
+							<h3><i>Arcteryx</i></h3>					
 						</div> <!-- productWeight -->
-
+						<div class="colour"><!--Form Start-->
+							<h3><sub>Colour:</sub></h3>
+							<span id="Beta-AR-Jacket_Colours" class="searchResultColours">
+								<span class="spanSearchResultColoursList">
+									<a href="JavaScript:newPopup('../Mens/images/Beta-AR-Jacket-Anvil-Grey.png');"><span class="spanSearchResultColoursListItem GREY selected" style="background: #858285;" data-basecolour="GREY" data-colourname="Anvil Grey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+									<a href="JavaScript:newPopup('../Mens/images/Beta-AR-Jacket-Arctic-Fog.png');"><span class="spanSearchResultColoursListItem BLUE" style="background: #788fa0;" data-basecolour="BLUE" data-colourname="Arctic Fog">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+									<a href="JavaScript:newPopup('../Mens/images/Beta-AR-Jacket-Black.png');"><span class="spanSearchResultColoursListItem BLACK" style="background: #000000;" data-basecolour="BLACK" data-colourname="Black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+									<a href="JavaScript:newPopup('../Mens/images/Beta-AR-Jacket-Chipotle.png');"><span class="spanSearchResultColoursListItem RED" style="background: #d93532;" data-basecolour="RED" data-colourname="Chipotle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+									<a href="JavaScript:newPopup('../Mens/images/Beta-AR-Jacket-Citron.png');"><span class="spanSearchResultColoursListItem YELLOW" style="background: #e7d15a;" data-basecolour="YELLOW" data-colourname="Citron">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+									<a href="JavaScript:newPopup('../Mens/images/Beta-AR-Jacket-Thalo-Blue.png');"><span class="spanSearchResultColoursListItem BLUE" style="background: #5491AE;" data-basecolour="BLUE" data-colourname="Thalo Blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+								</span>
+							</span>
+						</div>
+						<div class="Size">
+							<h3><sub>Size:</sub></h3>
+								<a href="#" class="$1">XS</a>
+								<a href="#" class="$1">S</a>
+								<a href="#" class="$1">M</a>
+								<a href="#" class="$1">L</a>
+								<a href="#" class="$1">XL</a>
+								<a href="#" class="$1">XXL</a>
+						</div>
 						<div class="productPrice">
 							<h3>$570.00 CAD</h3>
-								<form>
-									<input type="text" id="qty" name="qty" size="5" placeholder="Qty">
-								</form>
 						</div><!-- productPrice -->
-
-				<div class="colour"><!--Form Start-->
-						<label for="colour" ><b class="text">Colour:</b> </label>
-							<select name="colour" id="colour">
-								<option value="pre-colour" selected>Select Colour</option>
-								<option value="ArticFog">Arctic Fog</option>
-								<option value="AnvilGrey">Anvil Grey</option>
-								<option value="Black">Black</option>
-								<option value="Citron">Citron</option>
-								<option value="ThaloBlue">Thalo Blue</option>
-							</select>
-					</div>
-
-					<div class="size">
-						<label for="size" ><b class="text">Size:</b></label>
-							<select name="quantity" id="quantity">
-								<option value="pre-size" selected>Select Size</option>
-								<option value="XS">X Small</option> 
-		      					<option value="X">Small</option>
-		      					<option value="M">Medium</option>
-		      					<option value="L">Large</option>
-		      					<option value="XLarge">X Large</option>
-		      					<option value="XXLarge">X X Large</option>
-		      				</select>
-				</div>
 
 				<br>
 
@@ -153,22 +150,22 @@
 				<div class="col-2of3">
 					<div class="singleProductDesc">
 						<p>
-							<em>Beta Series: All-round mountain apparel | AR: All-Round. Lightweight & packable, waterproof GORE-TEX® Pro jacket; hip length with a helmet compatible DropHood <br>
+							<em>Beta Series: All-round mountain apparel | AR: All-Round. Lightweight & packable, waterproof GORE-TEX Pro jacket; hip length with a helmet compatible DropHood <br>
 							</em>
 						</p>
 					</div> <!-- singleProductDesc -->
 
 					<div class="col-1of2">
 						<div class="prodFeatures">
-							<h3><strong>Features:WaterTight™ Zippers</strong></h3>
+							<h3><strong>Features: WaterTight Zippers</strong></h3>
 							<ul>
-								<li>WaterTight™ zippers seal out weather</li>
+								<li>WaterTight zippers seal out weather</li>
 								<li>Zipper garages provide additional protection</li>
 								<li>Durable and easy to use</li>
 							</ul>
 							
 							<h3>Description</h3> 
-								<p>The streamlined Beta AR Jacket provides the backcountry minimalist with durable storm protection in a lightweight and packable format. This hip length GORE-TEX® Pro jacket reduces layering overlap and bulk, a helmet compatible DropHood™ offers quick storm protection, and reinforced shoulder and elbows survive alpine abuse.<br>
+								<p>The streamlined Beta AR Jacket provides the backcountry minimalist with durable storm protection in a lightweight and packable format. This hip length GORE-TEX Pro jacket reduces layering overlap and bulk, a helmet compatible DropHood™ offers quick storm protection, and reinforced shoulder and elbows survive alpine abuse.<br>
 								</p>
 						</div> <!-- prodFeatures -->
 					</div> <!-- col-1of2 -->
@@ -179,7 +176,7 @@
 				<div class="prodReview">
 
 					<h2><span class="reviewNo"> 1 </span>Product Reviews </h2><hr>
-					<h5> <em>By David Chou </em>| <em> Posted: Janurary 21, 2015 </em> </h5>
+					<h5> <em>By David Lam </em>| <em> Posted: Janurary 19, 2015 </em> </h5>
 					
 					<img id="reviewRating" src="../Mens/images/star4.png" alt="star4" width="90" height="14">
 					
